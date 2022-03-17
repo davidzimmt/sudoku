@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sudoku.css">
+</head>
+<body id="indexBody">
+    <audio  src="clapping.mpeg" id = "audio">
+        Your browser does not support the
+        <code>audio</code> element.
+</audio>
+<audio  src="finish.mpeg" id = "finishAudio">
+    Your browser does not support the
+    <code>audio</code> element.
+</audio>
+    <h1 id="h1Index">Sudoku</h1>
+<div>
+    <table id="tablee">
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+        </tr>
+        <tr>
+            <td  class="boltDown"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown boltRight"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown boltRight"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown"></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td ></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+        </tr>
+        <tr>
+            <td  class="boltDown"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown boltRight"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown boltRight"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown"></td>
+            <td  class="boltDown"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+            <td></td>
+            <td></td>
+            <td class="boltRight"></td>
+        </tr>
+    </table>
+</div>
+    
+
+<div id="buttons">
+<button onclick="finish()" class="indexButton">Finish</button>
+<button onclick="hint()" class="indexButton" >Hint</button>
+<button onclick="tryAgain()" class="indexButton">Try Again</button>
+<button class="indexButton"><a href="sudokuLevelPage.html">Back</a></button>
+</div>
+
+<div id="win">
+<p id="good">Congratulations!!!</p> 
+<button class="back"><a href="sudokuLevelPage.html">Back</a> </button>
+</div>
+
+<div id="lose">
+    <p id="failed">Unlucky. Try Again?</p> 
+    <button class="back"><a href="sudokuLevelPage.html">OK</a> </button>
+    </div>
+    
+
+<script src="sudoku.js">
+
+</script>
+</body>
+</html>
